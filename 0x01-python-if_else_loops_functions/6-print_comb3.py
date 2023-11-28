@@ -1,9 +1,11 @@
 #!/usr/bin/python3
-current_value = 0
+i = 0
 
-while current_value < 100:
-    if current_value == 99:
-        print("{}".format(current_value))
-    else:
-        print("{:02}".format(current_value), end=", ")
-    current_value += 1
+while i < 10:
+    j = i + 1
+    while j < 10:
+        if i != j:
+            separator = ", " if (i < 8 or j < 9) else "\n"
+            print("{:d}{:d}".format(i, j), end=separator)
+        j += 1
+    i += 1
