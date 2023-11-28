@@ -1,2 +1,6 @@
 #!/usr/bin/python3
-print(''.join(chr(i) for i in range(ord('a'), ord('z') + 1)))
+current_char = ord('a')
+
+while current_char <= ord('z'):
+    print('{}'.format(chr(current_char)), end='')
+    current_char += 1
