@@ -3,5 +3,9 @@ if __name__ == "__main__":
     import sys
     
     argv = sys.argv
+    result = 0
     
-    print(f"{argv:d}")
+    for i in range(1, len(argv)):
+        result += int(argv[i])
+        
+    print(f"{result}")
