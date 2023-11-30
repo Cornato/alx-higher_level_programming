@@ -1,1 +1,6 @@
 testrastgaftg
+
+main(char arvc)
+{
+	
+}
