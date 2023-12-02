@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 def no_c(my_string):
     result = ''
-    for name in range(len(my_string)):
-    	if my_string[name] != 'c' or my_string[name] != 'C':
-         result += my_string[name]
+    for i in range(len(my_string)):
+        if my_string[i] == "c" or my_string[i] == "C":
+            result += ''
         else:
-         result += ''
-         
+            result += my_string[i]
     return result
