@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
+def new_in_list(my_list, idx, element):
+    newlist = my_list
+    if idx < 0:
+        return newlist
+    if idx > len(newlist) - 1:
+        return newlist
 
-my_list = [1, 2, 3, 4, 5]
-print_reversed_list_integer(my_list)
+    newlist[idx] = element
+    return newlist
