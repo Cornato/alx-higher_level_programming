@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """mysql state from dayae"""
+
 import MySQLdb
 from sys import argv
 
