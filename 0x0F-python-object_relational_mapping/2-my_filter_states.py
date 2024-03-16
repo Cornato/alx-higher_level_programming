@@ -12,8 +12,7 @@ if __name__ == "__main__":
 
     query = dbnames.cursor()
     query.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
-                  .format(argv[4])
-    )
+                  .format(argv[4]))
 
     for i in query.fetchall():
         print(i)
