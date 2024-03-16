@@ -21,7 +21,7 @@ if __name__ == "__main__":
     test = []
     for i in query.fetchall():
         test.append(i[1])
-    print(",".join(test))
+    print(", ".join(test))
 
     query.close()
     dbnames.close()
