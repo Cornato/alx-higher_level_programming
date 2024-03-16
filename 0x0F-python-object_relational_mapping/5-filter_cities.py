@@ -18,8 +18,10 @@ if __name__ == "__main__":
         [argv[4]],
     )
 
+    test = []
     for i in query.fetchall():
-        print(i)
+        test.append(i[1])
+    print(",".join(test))
 
     query.close()
     dbnames.close()

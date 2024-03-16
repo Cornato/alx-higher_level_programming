@@ -10,3 +10,5 @@ Ahmed
 SELECT * FROM states WHERE LIKE BINARY name = %s", Ahmed]
 
 Ahmed
+
+Dallas, Houston ,Austin
