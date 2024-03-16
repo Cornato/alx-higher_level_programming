@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     query = dbnames.cursor()
     query.execute(
-        "SELECT * FROM states WHERE name\ LIKE BINARY 'N%' ORDER BY states.id"
+        "SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY states.id"
     )
 
     for i in query.fetchall():
