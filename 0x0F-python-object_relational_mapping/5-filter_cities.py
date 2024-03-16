@@ -13,7 +13,7 @@ if __name__ == "__main__":
     query = dbnames.cursor()
     query.execute(
         "SELECT cities.id, cities.name\
-                  FROM cities INNER JOIN states ON states.id=cities.state_id\
+                  FROM cities INNER JOIN states ON cities.state_id=states.id\
                   WHERE states.name = %s",
         [argv[4]],
     )
