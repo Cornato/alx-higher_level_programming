@@ -15,8 +15,7 @@ if __name__ == "__main__":
         "SELECT * FROM states WHERE name\ LIKE BINARY 'N%' ORDER BY states.id"
     )
 
-    rows = query.fetchall()
-    for i in rows:
+    for i in query.fetchall():
         print(i)
 
     query.close()
