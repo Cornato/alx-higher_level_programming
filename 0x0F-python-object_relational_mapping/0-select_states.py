@@ -7,7 +7,7 @@ from sys import argv
 if __name__ == '__main__':
     
     dbnames = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
-                         passwd=argv[2], dbname=argv[3])
+                         passwd=argv[2], db=argv[3])
     
     query = dbnames.cursor()
     query.execute("SELECT * FROM states ORDER BY states.id ASC")
